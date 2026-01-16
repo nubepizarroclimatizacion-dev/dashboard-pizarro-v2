@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPzSURBVHgB7ZxdcisxFIb/BS4Fwc2LuA/g/Y8i3IELwY24F1zJ/oMLwV24EHwFwV248B8U3E1w7dq1hFJKyckmSTKJJCEp6UNPkn6aJs10kp4+v+e+54QRkv9LYyO0DdgAbAOWgE1gC9gCttD/1gfsAlvgd+McsA1sAv57v7t+AvYB24CVwA/A091fAUsP2AnsA84CC3V/Ciya2AA2Ar+d766fJLIW2AtsA04DC3N/DCyiBRwgPGe6O0P2gQ1gI/DDeI/ZADYC3+1+V5/Iz1gC7AP2Aae4PwaWWACrwG/He+snyQo8YBmwF1jc/TGAgY+AC+O99RPAwJfApc7fARj4CLjV+TtgwE/Ai+M99ROAgc+Aq9z/DjDgM+B25++AAT8C7xvvoZ8EDHwO3OH+d4ABD4DbnL8DDHgCvDeeQz8JGPgcOM/5O2CAW8A34zX0k4CBzwHHOX8HDHABeA+8hv4SMHAmsLzzd8AA14CfhpvQXwIGHgWOdv4OGHAG+Ay8iv4SMHAmsLLz911g6dHAe+M19JGAgWOBbZ2/6wIndwKfhJvQTwIGjgW2df6uA5zdCjwSbkI/CRg4EtjY+bscMMAL4TfhJvSRAIGjge2cv8sBE7oDv4ab0EcCBI4GtnP+LgdM7Az8Am5CHwkQOBLYuPk7HDCwC/DLeA/9JEBgD2B75e+ywLBm4F3wEvpIgMAewPaK32WBcR3Am+El9JEAgT2ADRa/ywLjOgBfwyvpIwECewADLP6WBcZ1AD4br6SPBAjsAQyw+FsWGNfBN+HV9JG/L3B5O/DP+Jz6SX4jsPf/L/x+fT9fkv9q0r/+s/g933V/c/2v/qPzZ1z/6XzW/dW5rM8ff/3n2c+6/1sY/n/8x1YMBi02QY0NoMb/WwNtNoAaG0CN/7cGWmyANRaAyocC1FgA1L52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMYCUL52oMb/DywA+PzP4hd/A+A9T/8T/gPA3iNIfBv/A8Bv/gLg4L/12/gfAP7jLwAW/8f34X8A+A+/AFj8P771/wdgoQo02QBqbAA1/t8aKLMB1NgAajyAah8KUGMBqH3tQI0FoHz1v4G9wD7gNLBb98cACh4B74330M/f/wMvA/s0JgG71wAAAABJRU5ErkJggg==" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Pizarro Climatización</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Agregamos una paleta de colores personalizada para Pizarro Climatización
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'pizarro-blue': {
+                '50': '#eff6ff',
+                '100': '#dbeafe',
+                '200': '#bfdbfe',
+                '300': '#93c5fd',
+                '400': '#60a5fa',
+                '500': '#3b82f6',
+                '600': '#2563eb',
+                '700': '#1d4ed8',
+                '800': '#1e40af',
+                '900': '#1e3a8a',
+                '950': '#172554',
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.552.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "xlsx": "https://aistudiocdn.com/xlsx@^0.18.5",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.5.0/",
+    "firebase/app": "https://aistudiocdn.com/firebase@^12.5.0/app",
+    "firebase/auth": "https://aistudiocdn.com/firebase@^12.5.0/auth"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
