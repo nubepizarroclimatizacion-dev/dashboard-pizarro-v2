@@ -16,7 +16,9 @@
     "xlsx": "^0.18.5",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
-    "firebase": "^12.5.0"
+    "firebase": "^12.5.0",
+    "@vercel/blob": "^0.25.0",
+    "@vercel/blob/client": "^0.25.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
