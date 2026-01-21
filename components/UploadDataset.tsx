@@ -28,10 +28,10 @@ export default function UploadDataset() {
       setStatus("Subiendo...");
 
       // Nota: el pathname real lo fija tu api/upload.ts (datasets/latest.json)
-      const result = await upload(file.name, file, {
-        access: "public",
+      const result = await upload("latest.json", file, {
+        access: "private",
         handleUploadUrl: "/api/upload",
-        clientPayload: { adminKey: adminKey.trim() },
+       clientPayload: { adminkey: adminKey.trim() },
       });
 
       setLastUrl(result.url);
@@ -53,7 +53,7 @@ export default function UploadDataset() {
         value={adminKey}
         onChange={(e) => setAdminKey(e.target.value)}
         type="password"
-        placeholder="Ej: PIZARRO_ADMIN_2026"
+        placeholder="Ej: PIZARRO_ADMIN_xxxx"
         style={{
           width: "100%",
           padding: 10,
